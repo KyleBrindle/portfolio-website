@@ -1,12 +1,42 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+
+import { ContactComponent } from './contact/contact';
+import { HeaderComponent } from './header/header';
+import { ProjectComponent, Project } from './project/project';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [ContactComponent, HeaderComponent, ProjectComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('portfolio-website');
+  readonly name = 'Kyle Brindle';
+  readonly linkedInUrl = 'https://www.linkedin.com/in/kyle-brindle-cs305';
+  readonly githubUrl = 'https://github.com/KyleBrindle';
+
+  readonly projects: Project[] = [
+    {
+      title: 'Intrusion Detection System for Industrial Control Systems',
+      description:
+        'Machine Learning powered Intrusion Detection for ICS trained on the SWaT dataset',
+      technologies: ['Python', 'Scikit-learn', 'Machine Learning'],
+      link: 'https://github.com/KyleBrindle/cis5370-final-project',
+    },
+    {
+      title: 'Project Manager (WIP)',
+      description:
+        'A full-stack project manager',
+      technologies: ['Angular', 'Java', 'MySQL', 'TypeScript', 'CSS', 'HTML'],
+      link: 'https://github.com/your-username/api-weather-app',
+    },
+    {
+      title: 'Portfolio Website',
+      description:
+        'This website! Made using standalone Angular Components to showcase my programming work.',
+      technologies: ['Angular', 'TypeScript', 'CSS', 'HTML'],
+      link: 'https://github.com/your-username/portfolio-website',
+    },
+  ];
 }

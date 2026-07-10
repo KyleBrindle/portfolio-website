@@ -1,0 +1,56 @@
+.site-header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px clamp(16px, 5vw, 48px);
+  background: rgba(247, 243, 236, 0.82);
+  border-bottom: 1px solid rgba(23, 32, 29, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.brand {
+  color: #17201d;
+  font-size: 1rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-link {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  color: #17201d;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(23, 32, 29, 0.12);
+  border-radius: 8px;
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.icon-link:hover,
+.icon-link:focus-visible {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(181, 77, 50, 0.42);
+  outline: none;
+}
+
+svg {
+  width: 23px;
+  height: 23px;
+  fill: currentColor;
+}

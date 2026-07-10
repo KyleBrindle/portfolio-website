@@ -1,0 +1,53 @@
+.contact {
+  margin: 0 0 48px;
+  padding: clamp(28px, 6vw, 52px);
+  color: #ffffff;
+  background: #214a43;
+  border-radius: 8px;
+}
+
+p {
+  margin: 0 0 12px;
+  color: #f5b39e;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  width: min(720px, 100%);
+  margin: 0;
+  font-size: clamp(1.9rem, 5vw, 3.25rem);
+  line-height: 1.05;
+}
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 16px;
+  color: #17201d;
+  background: #ffffff;
+  border-radius: 8px;
+  font-weight: 850;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+a:hover,
+a:focus-visible {
+  transform: translateY(-2px);
+  background: #f5b39e;
+  outline: none;
+}
