@@ -29,14 +29,14 @@ export class App {
       description:
         'A full-stack project manager',
       technologies: ['Angular', 'Java', 'MySQL', 'TypeScript', 'CSS', 'HTML'],
-      link: 'https://github.com/your-username/api-weather-app',
+      link: 'https://github.com/KyleBrindle/project_manager',
     },
     {
       title: 'Portfolio Website',
       description:
         'This website! Made using standalone Angular Components to showcase my programming work.',
       technologies: ['Angular', 'TypeScript', 'CSS', 'HTML'],
-      link: 'https://github.com/your-username/portfolio-website',
+      link: 'https://github.com/KyleBrindle/portfolio-website',
     },
   ];
 }
