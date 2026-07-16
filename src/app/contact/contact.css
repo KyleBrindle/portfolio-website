@@ -33,6 +33,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 9px;
   min-height: 44px;
   padding: 11px 16px;
   color: #17201d;
@@ -50,4 +51,11 @@ a:focus-visible {
   transform: translateY(-2px);
   background: #f5b39e;
   outline: none;
+}
+
+img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }

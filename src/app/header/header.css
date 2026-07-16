@@ -49,8 +49,9 @@ nav {
   outline: none;
 }
 
-svg {
+img {
+  display: block;
   width: 23px;
   height: 23px;
-  fill: currentColor;
+  object-fit: contain;
 }
