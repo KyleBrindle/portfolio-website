@@ -18,18 +18,18 @@ export class App {
 
   readonly projects: Project[] = [
     {
+      title: 'Project Manager',
+      description:
+        'A full-stack project manager with an Angular frontend, Java Backend, and MySQL database. Follows the controller-service-repository design pattern.',
+      technologies: ['Angular', 'Java', 'MySQL', 'TypeScript', 'CSS', 'HTML', 'Maven'],
+      link: 'https://github.com/KyleBrindle/project_manager',
+    },
+    {
       title: 'Intrusion Detection System for Industrial Control Systems',
       description:
         'Machine Learning powered Intrusion Detection for ICS trained on the SWaT dataset',
       technologies: ['Python', 'Scikit-learn', 'Machine Learning'],
       link: 'https://github.com/KyleBrindle/cis5370-final-project',
-    },
-    {
-      title: 'Project Manager (WIP)',
-      description:
-        'A full-stack project manager',
-      technologies: ['Angular', 'Java', 'MySQL', 'TypeScript', 'CSS', 'HTML'],
-      link: 'https://github.com/KyleBrindle/project_manager',
     },
     {
       title: 'Portfolio Website',
@@ -38,5 +38,12 @@ export class App {
       technologies: ['Angular', 'TypeScript', 'CSS', 'HTML'],
       link: 'https://github.com/KyleBrindle/portfolio-website',
     },
+    {
+      title: 'Heuristic Ransomware Detections',
+      description: 'A heuristic ransomware-detection tool that performs static analysis on program binaries using pefile and Capstone to detect if a program is ransomware.',
+      technologies: ['Python', 'pefile', 'Capstone'],
+      link: 'https://gist.github.com/KyleBrindle/9bcc9552a60f195e68dfb89140580e1b'
+    },
+    
   ];
 }
